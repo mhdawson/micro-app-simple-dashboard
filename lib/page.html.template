@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/socket.io/socket.io.js"></script>
+    <title><TITLE></title>
+  </head>
+
+  <body style="overflow-x:hidden;overflow-y:hidden;">
+    <script>
+       var socket = new io.connect('<URL_TYPE>://' + window.location.host);
+       socket.on('data', function(data) {
+            var parts = data.split(":");
+            var topic = parts[0];
+            var value = parts[1];
+            var targetTD = document.getElementById(topic);
+            if (null != targetTD) {
+               targetTD.innerHTML=value;
+            }            
+       }) 
+    </script>
+    <table BORDER="10" width="100%" style="font-size:25px">
+      <tbody>
+        <DASHBOARD_ENTRIES>
+      </tbody>
+    </table>
+  </body>
+</html>
