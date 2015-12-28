@@ -37,11 +37,11 @@ The configuration entries that must be updated include:
 * serverPort - port on which the dashboard listens for connectsion
 * title - title for the dashbaord paged (optional)
 
-As a micro-app the dashboards also supports other options like authentication and
+As a micro-app the dashboard also supports other options like authentication and
 tls for the dashboard connection.  See the documentation for the micro-app-framework
 for additional details.
 
-As and exmple:
+The following is an example of the configuration file:
 
 <PRE>
 {
@@ -67,7 +67,7 @@ then run:
 npm start
 </PRE>
 
-From the directory in the micro-app-simple-dashboard was installed.
+from the directory in the micro-app-simple-dashboard was installed.
 
 Once the server is started. Point your browser at the host/port for the server.
 If you have configured your browswer to allow javascript to close the current page
@@ -77,7 +77,7 @@ password app page will be created.
 
 # Example
 
-The following is the page shown for my a sample configuration:
+The following is the page shown for a sample configuration:
 
 ![picture of dashboard main window](pictures/dashboard_main_window.jpg?raw=true)
 
