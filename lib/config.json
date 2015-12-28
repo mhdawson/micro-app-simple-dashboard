@@ -1,0 +1,8 @@
+{
+  "title": "House Data",
+  "serverPort": 3000,
+  "mqttServerUrl": "<add your mqtt server here>",
+  "dashboardEntries": [ {"name": "Inside temp", "topic": "house/temp2"},
+                        {"name": "Outside temp", "topic": "house/lacrossTX141/20/temp"},
+                        {"name": "Timestamp", "topic": "house/time"} ]
+}
