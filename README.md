@@ -34,7 +34,7 @@ The configuration entries that must be updated include:
   topic should be in the form of yyyyy,xxxx:value were yyyyy is generally a
   timestamp and the dasboard will extract the value after the ':' character and
   display it as the value for the corresponding label
-* serverPort - port on which the dashboard listens for connectsion
+* serverPort - port on which the dashboard listens for connections
 * title - title for the dashbaord paged (optional)
 
 As a micro-app the dashboard also supports other options like authentication and
