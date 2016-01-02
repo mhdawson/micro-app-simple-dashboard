@@ -70,9 +70,9 @@ npm start
 from the directory in the micro-app-simple-dashboard was installed.
 
 Once the server is started. Point your browser at the host/port for the server.
-If you have configured your browswer to allow javascript to close the current page
-the original window will be closed and one with the correct size of the onetime
-password app page will be created.
+If you have configured your browser to allow javascript to close the current page
+the original window will be closed and one with the correct size of the
+simple-dashboard app page will be created.
 
 
 # Example
