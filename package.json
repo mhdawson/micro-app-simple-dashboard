@@ -1,6 +1,6 @@
 {
   "name": "micro-app-simple-dashboard",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple dashboard to display iot data",
   "main": "lib/server.js",
   "scripts": {
