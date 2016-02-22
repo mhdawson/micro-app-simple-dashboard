@@ -2,7 +2,7 @@
 
 Micro app to display a home dashboard showing temperature, power
 usage and other data collected from local sensors. The dashboard is updated
-in realtime using socket.io
+in realtime using socket.io.
 
 The dashboards listens on a number of mqtt topics for updates and then
 forwards the updates to clients using socket.io.  It provides a simple way
@@ -12,14 +12,14 @@ This is an example display:
 
 ![picture of dashboard main window](pictures/dashboard_main_window.jpg?raw=true)
 
-The following projects can be used to connect sensors temperature
-sensors and power sensors
+The following project can be used to connect sensors temperature
+sensors and power sensors:
 
 * [PI433WirelessRecvMananager](https://github.com/mhdawson/PI433WirelessRecvManager)
 
 # Usage
 
-After installation modify ../lib/config.json to match your configuration
+After installation modify ../lib/config.json to match your configuration.
 
 The configuration entries that must be updated include:
 
@@ -28,8 +28,8 @@ The configuration entries that must be updated include:
   in the lib directory called mqttclient which contains ca.cert, client.cert,
   client.key which contain the key and associated certificates for a client
   which is authorized to connect to the mqtt server.
-* dashboardEntries - array in which each entry  which contain a name and topic field.
-  The name is what will be display as the label in the dashboard and the topic
+* dashboardEntries - array in which each entry contains a name and topic field.
+  The name is what will be displayed as the label in the dashboard and the topic
   is the topic on which the dashboard will listen for updates.  Updates on the
   topic should be in the form of yyyyy,xxxx:value were yyyyy is generally a
   timestamp and the dasboard will extract the value after the ':' character and
@@ -41,7 +41,7 @@ As a micro-app the dashboard also supports other options like authentication and
 tls for the dashboard connection.  See the documentation for the micro-app-framework
 for additional details.
 
-The following is an example of the configuration file:
+The following is an example configuration file:
 
 <PRE>
 {
@@ -56,7 +56,7 @@ The following is an example of the configuration file:
 
 # Installation
 
-Simply run npm install micro-app-simple-dashboard
+Simply run npm install micro-app-simple-dashboard.
 
 # Running
 
@@ -67,7 +67,7 @@ then run:
 npm start
 </PRE>
 
-from the directory in the micro-app-simple-dashboard was installed.
+from the directory in which the micro-app-simple-dashboard was installed.
 
 Once the server is started. Point your browser at the host/port for the server.
 If you have configured your browser to allow javascript to close the current page
@@ -90,7 +90,7 @@ As a micro-app the onetime password app depends on the micro-app-framework:
 * [micro-app-framework github](https://github.com/mhdawson/micro-app-framework)
 
 See the documentation on the micro-app-framework for more information on general
-configurtion options that are availble (ex using tls, authentication, serverPort, etc)
+configuration options that are availble (ex using tls, authentication, serverPort, etc).
 
 # TODO
 * option to support different skins
